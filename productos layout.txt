@@ -1,0 +1,30 @@
+<ion-card >
+
+    <img src="assets/imgs/{{prd.imagen}}"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        TITULO
+      </ion-card-title>
+      <p>
+       DESCRIPCION
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="success" icon-start>
+          <ion-icon name='cash'></ion-icon>
+          PRECIO
+        </button>
+      </ion-col>
+
+      <ion-col text-right>
+        <button ion-button clear small color="danger" (click)="agregar(prd)" icon-start>
+          <ion-icon name='cart'></ion-icon>
+          Agregar
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
